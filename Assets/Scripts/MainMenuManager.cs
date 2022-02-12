@@ -10,6 +10,7 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private Button creditsCloseButton;
     [SerializeField] private GameObject creditsUI;
     [SerializeField] private Button notQuitePlatformerButton;
+    [SerializeField] private Button threeDSpawnButton;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,9 +18,10 @@ public class MainMenuManager : MonoBehaviour
         creditsOpenButton.onClick.AddListener(() => creditsUI.SetActive(true));
         creditsCloseButton.onClick.AddListener(()=> creditsUI.SetActive(false));
         notQuitePlatformerButton.onClick.AddListener(() => LoadingScreen.LoadScene("NotQuitePlatformer"));
+        threeDSpawnButton.onClick.AddListener(()=> LoadingScreen.LoadScene("3DSpawn"));
 
 
-        
+
     }
 
     // Update is called once per frame
