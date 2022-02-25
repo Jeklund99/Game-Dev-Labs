@@ -12,6 +12,7 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private Button notQuitePlatformerButton;
     [SerializeField] private Button threeDSpawnButton;
     [SerializeField] private Button pongButton;
+    [SerializeField] private Button fpsButton;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,8 @@ public class MainMenuManager : MonoBehaviour
         notQuitePlatformerButton.onClick.AddListener(() => LoadingScreen.LoadScene("NotQuitePlatformer"));
         threeDSpawnButton.onClick.AddListener(()=> LoadingScreen.LoadScene("3DSpawn"));
         pongButton.onClick.AddListener(() => LoadingScreen.LoadScene("Pong"));
+        fpsButton.onClick.AddListener(() => LoadingScreen.LoadScene("FPS"));
+
 
 
     }
