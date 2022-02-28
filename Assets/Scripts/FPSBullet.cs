@@ -20,7 +20,7 @@ public class FPSBullet : MonoBehaviour
         while (elapsedTime <= moveTime)
         {
             elapsedTime += Time.deltaTime;
-            mainTransform.position += mainTransform.up * moveSpeed * Time.deltaTime;
+            mainTransform.position += mainTransform.forward * moveSpeed * Time.deltaTime;
             yield return null;
         }
         Destroy(gameObject);
